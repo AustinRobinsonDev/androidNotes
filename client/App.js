@@ -5,16 +5,16 @@ import { Store } from "./redux/store";
 import { PaperProvider } from "react-native-paper";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Home from "./components/pages/Home";
+import Details from "./components/pages/Details";
 
-import Home from "./components/Home";
-import Details from "./components/Details";
 export default function App() {
   const Stack = createNativeStackNavigator();
   return (
     <PaperProvider>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="NotePad" component={Home} />
+          <Stack.Screen name="NotePad+" component={Home} />
           <Stack.Screen name="Details" component={Details} />
         </Stack.Navigator>
       </NavigationContainer>
@@ -31,3 +31,8 @@ const styles = StyleSheet.create({
     // minWidth: "100%",
   },
 });
+
+// TODO:
+// finish redux set up
+// finish backend set up
+//

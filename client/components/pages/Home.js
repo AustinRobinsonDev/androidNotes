@@ -3,8 +3,8 @@ import { ScrollView, View, Text, StyleSheet } from "react-native";
 import { Button } from "react-native-paper";
 import { Searchbar } from "react-native-paper";
 import { FAB } from "react-native-paper";
-import NoteCard from "./NoteCard";
-import NoteList from "./NoteList";
+import NoteCard from "../NoteCard";
+import NoteList from "../NoteList";
 
 const Home = ({ navigation }) => {
   const [searchQuery, setSearchQuery] = React.useState("");

@@ -24,14 +24,22 @@ const NoteCard = () => {
           <Title>Card title</Title>
           <Paragraph>Card content</Paragraph>
         </Card.Content>
-        <Card.Cover source={{ uri: "https://picsum.photos/700" }} />
+        {/* <Card.Cover source={{ uri: "https://picsum.photos/700" }} /> */}
         <Card.Actions>
-          <Button>Cancel</Button>
-          <Button>Ok</Button>
+          <Button>Edit</Button>
+          {/* <Button>Ok</Button> */}
         </Card.Actions>
       </Card>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  m: {
+    marginBottom: 5,
+
+    // minWidth: "100%",
+  },
+});
 
 export default NoteCard;

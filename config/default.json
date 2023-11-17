@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://austinworktrux:hIO3Uyjj2r2RFs0b@cluster0.xtb4ssi.mongodb.net/?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
+}
